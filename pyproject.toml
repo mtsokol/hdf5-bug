@@ -9,7 +9,10 @@ packages = [{include = "example_pkg", from = "src"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 juliapkg = "^0.1.16"
-juliacall = "^0.9.24"
+juliacall = [
+    {version = "0.9.24", platform = "darwin"},
+    {version = "^0.9.24"}
+]
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.4"
